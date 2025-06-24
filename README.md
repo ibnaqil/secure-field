@@ -8,17 +8,17 @@ A secure text input field for Filament that encrypts data when saving and decryp
 composer require ibnaqil/secure-field
 ```
 
-Or if it's not published to Packagist yet:
+## Usage
 
-composer require ibnaqil/secure-field --repository='{"type":"vcs", "url":"https://github.com/ibnaqil/secure-field"}'
-
-Usage
-
+```
 use Ibnaqil\SecureField\Components\SecureField;
+```
 
+```
 SecureField::make('passphrase')
 ->label('Secure Passphrase')
 ->required(),
+```
 
 That's it! Your data will be encrypted in storage and decrypted when displayed.
 
